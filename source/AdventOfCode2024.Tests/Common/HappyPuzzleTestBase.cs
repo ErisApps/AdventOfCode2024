@@ -1,9 +1,11 @@
 ﻿using AdventOfCode2024.Common;
 using FluentAssertions;
+using JetBrains.Annotations;
 using Xunit;
 
 namespace AdventOfCode2024.Tests.Common;
 
+[UsedImplicitly(ImplicitUseTargetFlags.WithInheritors)]
 public abstract class HappyPuzzleTestBase<TPuzzle> where TPuzzle : HappyPuzzleBase, new()
 {
 	protected abstract string Part1AssetName { get; } // eg: "Day01_Part1.txt"

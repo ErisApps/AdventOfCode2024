@@ -18,9 +18,9 @@ public class HappyPuzzleBaseBenchmark<TPuzzle> where TPuzzle : HappyPuzzleBase, 
 
 	[Benchmark]
 	[BenchmarkCategory(Constants.PART1)]
-	public void SolvePart1() => _sub.SolvePart1(_input);
+	public object SolvePart1() => _sub.SolvePart1(_input);
 
 	[Benchmark]
 	[BenchmarkCategory(Constants.PART2)]
-	public void SolvePart2() => _sub.SolvePart2(_input);
+	public object SolvePart2() => _sub.SolvePart2(_input);
 }
